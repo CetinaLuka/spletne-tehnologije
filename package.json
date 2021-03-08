@@ -4,7 +4,8 @@
   "description": "Streznik za 2. nalogo pri predmetu IS. Predstavlja funkcionalnosti streznika.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Luka Cetina",
   "license": "ISC",
