@@ -3,8 +3,88 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Tole je html stran</h1>
-		<p>blablablablablažžžžž</p>
+		<a href="/"><- domov</a>
+		<h1>Funkcionalnosti strežnika</h1>
+		<h3>1. Prijava</h3>
+		<p><b>Vhod: </b>Uporabniško ime/email, geslo</p>
+		<p><b>Izhod: </b>Jwt token, podatki o uporabniku</p>
+		<p>Mobilna aplikacija bo nudila različne funkcionalnosti glede na vlogo uporabnika, zato je potrebna prijava. 
+			Pomembna je tudi zato, da so podatki varni in jih zunanje osebe ne morejo spreminjati, zato bo strežnik ob zahteval zahteval JWT token.
+		</p>
+		<hr />
+		<h3>2. Pridobitev ponudbe</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve</p>
+		<p><b>Izhod: </b>Podatki o ponudbi</p>
+		<p>Iz baze prebere in vrne ponudbo ponudnika storitev z ustreznim ID. Aplikacija te podatke potrebuje, da lahko uporabniku pokaže kaj vse podjetje nudi. Prav tako pa tudi podjetja potrebujejo pregled nad svojo ponudbo.
+		</p>
+		<hr />
+		<h3>3. Spreminjanje ponudbe</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, novi podatki o ponudbi</p>
+		<p><b>Izhod: </b>Jwt token, podatki o uporabniku</p>
+		<p>Strežnik v bazu spremeni ponudbo ustreznega ponudnika.
+		</p>
+		<hr />
+		<h3>4. Pridobitev seznama prostih/zasedenih terminov</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, časovno obdobje</p>
+		<p><b>Izhod: </b>Seznam prostih/zasedenih terminov</p>
+		<p>Strežnik iz baze vrne vse termine, da lahko v zasleni in uporabniki v aplikaciji vidijo kdaj so termini prosti/zasedeni.
+		</p>
+		<hr />
+		<h3>5. Pridobitev delovnega časa</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve</p>
+		<p><b>Izhod: </b>Podatki o delovnem času</p>
+		<p>Strežnik iz podatkoven baze prebere in vrne podatke o delovnem času ustreznwega ponudnika storitve, saj bo mobilna aplikacija prikazovala delovni čas ponudnika storitve.
+		</p>
+		<hr />
+		<h3>6. Spreminjanje delovnega časa</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve</p>
+		<p><b>Izhod: </b>Posodobljeni podatki</p>
+		<p>Strežnik v bazi spremeni delovni čas, saj lahko uslužbenci ponudnika storitve bodo spreminjajo podatke svojega podjetja.
+		</p>
+		<hr />
+		<h3>7. Pridobitev seznama ponudnikov storitev</h3>
+		<p><b>Vhod: </b>opcijski filtri (lokacija, vrsta)</p>
+		<p><b>Izhod: </b>Seznam ponudnikov storitev</p>
+		<p>Strežnik bo vračal seznam ponudnikov storitve, da bodo lahko stranke v aplikaciji videle vse ponudnike v bližini.
+		</p>
+		<hr />
+		<h3>8. Dodajanje rezervacije</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, podatki o rezervaciji</p>
+		<p><b>Izhod: </b>Dodana rezervacija</p>
+		<p>Strežnik bo v bazo dodal rezervacijo, ki jo bodo zaposleni bodo preko mobilne aplikacije vnesli.
+		</p>
+		<hr />
+		<h3>9. Sprememba rezervacije</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, ID rezervacije, podatki o spremenjeni rezervaciji</p>
+		<p><b>Izhod: </b>Spremenjena rezervacija</p>
+		<p>Strežnik bo v bazi posodobil rezervacijo.
+		</p>
+		<hr />
+		<h3>10. Pridobitev rezervacije</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, ID rezervacije</p>
+		<p><b>Izhod: </b>Podatki o rezervaciji</p>
+		<p>Strežnik bo iz baze prebral in vrnil ustrezno rezervacijo.
+		</p>
+		<hr />
+		<h3>11. Pridobitev informacij o podjetju</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve</p>
+		<p><b>Izhod: </b>Informacije o podjetju</p>
+		<p>Strežnik iz baze prebere in vrne podatke o ustreznemu ponudniku storitev.
+		</p>
+		<hr />
+		<h3>12. Spreminjanje informacij o podjetju</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, novi podatki o podjetju</p>
+		<p><b>Izhod: </b>nove nformacije o podjetju</p>
+		<p>Strežnik v bazi posodobi podatke o ustreznemu ponudniku storitev.
+		</p>
+		<hr />
+		<h3>13. Generiranje poročila o poslovanju</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, časovno obdobje</p>
+		<p><b>Izhod: </b>Poročilo v excel datoteki</p>
+		<p>Strežnik iz baze prebere podatke o naročilih in podjetju, ter zgenenerira poročilo o izvedenih (ali prihodnjih) naročilih za določeno časovno obdobje.
+		</p>
+		<hr />
+		<h3>Diagram primerov uporabe</h3>
 		<img src="/use-case-diagram" />
 	</body>
 </html>

@@ -21,21 +21,21 @@ server.on('request', (req, res) => {
         });
     }
     else if(url === "/posebnosti"){
-        res.writeHead(200, { 'Content-type': 'text/html; charset=utf-8'});
+        res.writeHead(200, { 'Content-type': 'text/plain; charset=utf-8'});
         fs.readFile('assets/text/posebnosti.txt', function(err, data) {
 
             return res.end(data);
         });
     }
     else if(url === "/style.css"){
-        res.writeHead(200, { 'Content-type': 'text/html; charset=utf-8'});
+        res.writeHead(200, { 'Content-type': 'text/css; charset=utf-8'});
         fs.readFile('assets/css/style.css', function(err, data) {
             return res.end(data);
         });
     }
     else if(url === "/use-case-diagram"){
         res.writeHead(200, { 'Content-type': 'image/gif'});
-        fs.readFile('assets/img/uml.jpg', function(err, data) {
+        fs.readFile('assets/img/use_case.jpg', function(err, data) {
             return res.end(data);
         });
     }
