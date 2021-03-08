@@ -1,0 +1,14 @@
+{
+  "name": "streznik",
+  "version": "1.0.0",
+  "description": "Streznik za 2. nalogo pri predmetu IS. Predstavlja funkcionalnosti streznika.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luka Cetina",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
