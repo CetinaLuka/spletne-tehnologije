@@ -23,9 +23,9 @@ server.on('request', (req, res) => {
     else if(url === "/posebnosti"){
         res.writeHead(200, { 'Content-type': 'text/plain; charset=utf-8'});
         var data = "Posebnosti strežnika"
-            +"Strežnik bo moral dostopati do podatkovne baze, ki je lahko oddaljena ali pa lokalna."
-            +"Strežnik bo moral tudi implementirati funkcionalnosti prijave, kar bo izvedeno z uporabo tretjega ponudnika kot sta OAuth, Firebase,..."
-            +"Strežnik bo moral znati generirati .xslx poročila, za kar bo potreboval ustrezno knjižnico."
+            +"\nStrežnik bo moral dostopati do podatkovne baze, ki je lahko oddaljena ali pa lokalna."
+            +"\nStrežnik bo moral tudi implementirati funkcionalnosti prijave, kar bo izvedeno z uporabo tretjega ponudnika kot sta OAuth, Firebase,..."
+            +"\nStrežnik bo moral znati generirati .xslx poročila, za kar bo potreboval ustrezno knjižnico."
         return res.end(data);
     }
     else if(url === "/style.css"){
