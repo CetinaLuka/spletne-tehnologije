@@ -25,7 +25,7 @@
 		</p>
 		<hr />
 		<h3>4. Pridobitev seznama prostih/zasedenih terminov</h3>
-		<p><b>Vhod: </b>ID ponudnika storitve, časovno obdobje</p>
+		<p><b>Vhod: </b>ID ponudnika storitve, časovno obdobje, filter (prosti/zasedeni/vse)</p>
 		<p><b>Izhod: </b>Seznam prostih/zasedenih terminov</p>
 		<p>Strežnik iz baze vrne vse termine, da lahko v zasleni in uporabniki v aplikaciji vidijo kdaj so termini prosti/zasedeni.
 		</p>
@@ -60,25 +60,31 @@
 		<p>Strežnik bo v bazi posodobil rezervacijo.
 		</p>
 		<hr />
-		<h3>10. Pridobitev rezervacije</h3>
+		<h3>10. Brisanje rezervacije</h3>
+		<p><b>Vhod: </b>ID ponudnika storitve, ID rezervacije</p>
+		<p><b>Izhod: </b></p>
+		<p>Strežnik iz baze izbrisal rezervacijo.
+		</p>
+		<hr />
+		<h3>11. Pridobitev rezervacije</h3>
 		<p><b>Vhod: </b>ID ponudnika storitve, ID rezervacije</p>
 		<p><b>Izhod: </b>Podatki o rezervaciji</p>
 		<p>Strežnik bo iz baze prebral in vrnil ustrezno rezervacijo.
 		</p>
 		<hr />
-		<h3>11. Pridobitev informacij o podjetju</h3>
+		<h3>12. Pridobitev informacij o podjetju</h3>
 		<p><b>Vhod: </b>ID ponudnika storitve</p>
 		<p><b>Izhod: </b>Informacije o podjetju</p>
 		<p>Strežnik iz baze prebere in vrne podatke o ustreznemu ponudniku storitev.
 		</p>
 		<hr />
-		<h3>12. Spreminjanje informacij o podjetju</h3>
+		<h3>13. Spreminjanje informacij o podjetju</h3>
 		<p><b>Vhod: </b>ID ponudnika storitve, novi podatki o podjetju</p>
 		<p><b>Izhod: </b>nove nformacije o podjetju</p>
 		<p>Strežnik v bazi posodobi podatke o ustreznemu ponudniku storitev.
 		</p>
 		<hr />
-		<h3>13. Generiranje poročila o poslovanju</h3>
+		<h3>14. Generiranje poročila o poslovanju</h3>
 		<p><b>Vhod: </b>ID ponudnika storitve, časovno obdobje</p>
 		<p><b>Izhod: </b>Poročilo v excel datoteki</p>
 		<p>Strežnik iz baze prebere podatke o naročilih in podjetju, ter zgenenerira poročilo o izvedenih (ali prihodnjih) naročilih za določeno časovno obdobje.
